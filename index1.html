@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Najdi Artworks | Contemporary Najdi-Inspired Art</title>
+    <meta
+      name="description"
+      content="Najdi Artworks creates contemporary art, wall pieces, and custom visual work inspired by Najdi heritage, pattern, and material craft."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Najdi Artworks home">
+        <img class="brand-logo" src="najdi-logo.png" alt="" aria-hidden="true" />
+        <span>Najdi Artworks</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-controls">
+        <button class="cart-button" type="button" aria-label="Open shopping cart" aria-expanded="false">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M6.5 7.5h11l-.9 8.2a2 2 0 0 1-2 1.8H9.4a2 2 0 0 1-2-1.8L6.5 7.5Z" />
+            <path d="M9 7.5a3 3 0 0 1 6 0" />
+            <path d="M9.2 20h.1" />
+            <path d="M14.7 20h.1" />
+          </svg>
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
+        <a class="header-action" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <aside class="cart-popover" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-head">
+        <div>
+          <p class="cart-kicker">Your cart</p>
+          <h2>Shopping Cart</h2>
+        </div>
+        <button class="cart-close" type="button" aria-label="Close shopping cart">x</button>
+      </div>
+      <div class="cart-items" aria-live="polite">
+        <p class="cart-empty">Your cart is empty.</p>
+      </div>
+      <div class="cart-summary">
+        <span>Total</span>
+        <strong class="cart-total">0 SAR</strong>
+      </div>
+      <button class="cart-clear" type="button">Clear cart</button>
+      <a class="checkout-button" href="https://wa.me/966554674825" target="_blank" rel="noopener">Order via WhatsApp</a>
+    </aside>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <img class="hero-logo" src="najdi-logo.png" alt="Najdi Artworks" />
+          <p class="eyebrow">Established 2025</p>
+          <h1 id="hero-title">Najdi Artworks</h1>
+          <p class="hero-lede">
+            Original artwork and visual pieces shaped by Najdi geometry, warm
+            earth pigments, and quiet architectural rhythm.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#work">View Work</a>
+            <a class="button button-secondary" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Najdi Artworks visual preview">
+          <img
+            src="najdi-artworks-hero.png"
+            alt="Layered Najdi-inspired artwork in dark green, sand, brass, and clay tones"
+          />
+        </div>
+      </section>
+
+      <section class="intro-band" id="studio" aria-labelledby="studio-title">
+        <div class="section-kicker">The studio</div>
+        <div class="intro-grid">
+          <h2 id="studio-title">Heritage patterns made for modern spaces.</h2>
+          <p>
+            Najdi Artworks is a solo creative practice blending regional motifs
+            with a restrained contemporary finish, creating pieces that feel
+            rooted, collectible, and personal.
+          </p>
+        </div>
+      </section>
+
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Shop preview</p>
+          <h2 id="work-title">Small prints inspired by places around Riyadh.</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <img
+              src="diriyah-print.jpg"
+              alt="Diriyah-inspired print placeholder showing traditional architecture at night"
+            />
+            <div class="product-info">
+              <p class="product-tag">Placeholder item</p>
+              <h3>Diriyah Night Print</h3>
+              <p>A warm architectural piece inspired by Diriyah textures, clay walls, and evening light.</p>
+              <div class="product-footer">
+                <strong>45 SAR</strong>
+                <button
+                  type="button"
+                  data-cart-add
+                  data-name="Diriyah Night Print"
+                  data-price="45"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img
+              src="kafd-print.jpg"
+              alt="KAFD-inspired print placeholder showing Riyadh towers under night clouds"
+            />
+            <div class="product-info">
+              <p class="product-tag">Placeholder item</p>
+              <h3>KAFD Moon Print</h3>
+              <p>A darker city piece inspired by KAFD towers, night skies, and glowing urban lines.</p>
+              <div class="product-footer">
+                <strong>35 SAR</strong>
+                <button
+                  type="button"
+                  data-cart-add
+                  data-name="KAFD Moon Print"
+                  data-price="35"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="services-section" id="services" aria-labelledby="services-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">What we create</p>
+          <h2 id="services-title">A small practice with a focused hand.</h2>
+        </div>
+        <div class="service-list">
+          <article class="service-item">
+            <span>01</span>
+            <div>
+              <h3>Original Pieces</h3>
+              <p>Finished artwork made in small batches with a clear Najdi-inspired language.</p>
+            </div>
+          </article>
+          <article class="service-item">
+            <span>02</span>
+            <div>
+              <h3>Personal Requests</h3>
+              <p>Simple custom requests when the idea fits the style and pace of the studio.</p>
+            </div>
+          </article>
+          <article class="service-item">
+            <span>03</span>
+            <div>
+              <h3>Creative Experiments</h3>
+              <p>Pattern studies, color explorations, and one-off pieces as the collection grows.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Interested in a piece or a future drop?</h2>
+        </div>
+        <a
+          class="button button-primary light"
+          href="https://wa.me/966554674825?text=Hello%20Najdi%20Artworks%2C%20I%20would%20like%20to%20ask%20about%20your%20artwork."
+          target="_blank"
+          rel="noopener"
+        >
+          +966 554674825
+        </a>
+      </section>
+    </main>
+    <script src="script1.js"></script>
+  </body>
+</html>
+
